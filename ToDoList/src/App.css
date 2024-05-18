@@ -23,6 +23,16 @@ body{
   background-color: #ccc;
 }
 
+.task-update{
+  width: 100%;
+}
+
+.taskUpdate-button{
+  background-color: #e8b007;
+  padding: 6px 6px;
+  border-radius: 20px;
+}
+
 .task-form {
   display: flex;
   flex-direction: column;
