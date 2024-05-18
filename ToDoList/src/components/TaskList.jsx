@@ -1,8 +1,15 @@
 import React from 'react'
+import TaskShow from './TaskShow'
 
-function TaskList() {
+function TaskList({Tasks,onDelete}) {
   return (
-    <div>TaskList</div>
+    <div className='Task-List'>
+      {Tasks.map((task)=>{
+        return (
+          <TaskShow key={task.id} task={task} onDelete={onDelete}/>
+        )
+      })}
+    </div>
   )
 }
 
